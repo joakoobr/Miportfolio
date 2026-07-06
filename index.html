@@ -13,33 +13,70 @@
 </head>
 
 <body>
+    <!-- Efectos visuales de fondo -->
     <div class="noise-overlay"></div>
+    <div class="ambient-light light-1"></div>
+    <div class="ambient-light light-2"></div>
+    <div id="particles-container"></div>
 
     <div class="cursor-dot"></div>
     <div class="cursor-outline"></div>
 
+    <!-- FONDO ENRIQUECIDO: Barbería + Programación -->
     <div class="bg-icons-container">
+        <!-- Barbería -->
         <i class="fa-solid fa-scissors bg-icon" style="top: 15%; left: 10%; font-size: 3rem; transform: rotate(-20deg);"></i>
         <i class="fa-solid fa-comb bg-icon" style="top: 45%; left: 5%; font-size: 4rem; transform: rotate(15deg);"></i>
         <i class="fa-solid fa-spray-can bg-icon" style="top: 85%; left: 15%; font-size: 2.5rem; transform: rotate(10deg);"></i>
         <i class="fa-solid fa-chair bg-icon" style="top: 30%; left: 85%; font-size: 3.5rem;"></i>
         <i class="fa-solid fa-scissors bg-icon" style="top: 75%; left: 90%; font-size: 2.8rem; transform: rotate(45deg);"></i>
         <i class="fa-solid fa-pump-soap bg-icon" style="top: 60%; left: 50%; font-size: 2rem;"></i>
-        <i class="fa-solid fa-wand-magic-sparkles bg-icon" style="top: 10%; left: 60%; font-size: 2.2rem;"></i>
         <i class="fa-solid fa-droplet bg-icon" style="top: 80%; left: 30%; font-size: 3rem; transform: rotate(30deg);"></i>
         <i class="fa-solid fa-store bg-icon" style="top: 20%; left: 35%; font-size: 4rem;"></i>
         <i class="fa-solid fa-brush bg-icon" style="top: 90%; left: 70%; font-size: 2.5rem; transform: rotate(-15deg);"></i>
+        <i class="fa-solid fa-jug-detergent bg-icon" style="top: 10%; left: 80%; font-size: 2rem; transform: rotate(15deg);"></i>
+        <!-- Programación -->
+        <i class="fa-solid fa-code bg-icon" style="top: 12%; left: 50%; font-size: 3rem; opacity: 0.15;"></i>
+        <i class="fa-solid fa-terminal bg-icon" style="top: 70%; left: 10%; font-size: 3.5rem; opacity: 0.15; transform: rotate(-10deg);"></i>
+        <i class="fa-brands fa-python bg-icon" style="top: 35%; left: 25%; font-size: 4rem; opacity: 0.1;"></i>
+        <i class="fa-brands fa-js bg-icon" style="top: 55%; left: 80%; font-size: 3.5rem; opacity: 0.1; transform: rotate(20deg);"></i>
+        <i class="fa-solid fa-database bg-icon" style="top: 88%; left: 50%; font-size: 3rem; opacity: 0.12;"></i>
+        <i class="fa-brands fa-html5 bg-icon" style="top: 25%; left: 65%; font-size: 4rem; opacity: 0.1; transform: rotate(-15deg);"></i>
+        <span class="bg-text" style="top: 40%; left: 40%;">console.log("Estilo");</span>
+        <span class="bg-text" style="top: 65%; left: 65%;">def fade():</span>
+        <span class="bg-text" style="top: 15%; left: 25%;">&lt;/&gt;</span>
+        <span class="bg-text" style="top: 85%; left: 85%;">{ }</span>
     </div>
 
+    <!-- NAVBAR MEJORADO CON MENÚ DESPLEGABLE RESPONSIVE -->
     <header class="navbar">
         <div class="container nav-container">
-            <div class="logo-text">JOAQUIN_<span>OBREGON</span></div>
-            <nav>
-                <a href="#sobre-mi" class="magnetic-item">01. Perfil</a>
-                <a href="#redes" class="magnetic-item">02. Redes</a>
-                <a href="#formacion" class="magnetic-item">03. Trayectoria</a>
-                <a href="#proyectos" class="magnetic-item">04. Proyectos</a>
-                <a href="#destrezas" class="magnetic-item">05. Skills</a>
+            <div class="logo-text">JOAQUIN OBREGON / <span>/ "OBRBARBER"</span></div>
+            <button class="mobile-toggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="nav-links">
+                <ul class="menu-principal">
+                    <li><a href="#inicio" class="magnetic-item"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#sobre-mi" class="magnetic-item dropdown-toggle">
+                            <i class="fa-solid fa-user-tie"></i> Perfil <i class="fa-solid fa-chevron-down flecha-drop"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="#formacion"><i class="fa-solid fa-graduation-cap"></i> Trayectoria</a></li>
+                            <li><a href="#destrezas"><i class="fa-solid fa-microchip"></i> Skills Tecnológicos</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-principal">
+                        <a href="#proyectos" class="magnetic-item">
+                            <i class="fa-solid fa-house"></i> Proyectos
+                        </a>
+                    </li>
+
+                    <li><a href="#redes" class="magnetic-item"><i class="fa-solid fa-hashtag"></i> Redes</a></li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -53,9 +90,10 @@
         </div>
 
         <div class="hero-content">
-            <p class="hero-subtitle glitch-text" data-text="// SISTEMAS & ESTILISMO">// SISTEMAS & ESTILISMO</p>
+            <!-- Efecto Glitch Eliminado -->
+            <p class="hero-subtitle">// SISTEMAS & ESTILISMO</p>
             <h1 class="hero-title">OBREGON <span class="razor-slash"></span><br>JOAQUIN</h1>
-            <p class="typing-text">Equilibrando código estructurado y espíritu emprendedor.</p>
+            <p class="typing-text">Código estructurado y espíritu emprendedor.</p>
             <a href="#sobre-mi" class="scroll-down-btn magnetic-item mt-3">
                 <i class="fa-solid fa-chevron-down" style="color: var(--vintage-gold); font-size: 2rem;"></i>
             </a>
@@ -73,12 +111,12 @@
 
     <div class="barber-marquee">
         <div class="marquee-content">
-            ✦ PROACTIVIDAD ✦ ATENCIÓN AL CLIENTE ✦ RESOLUCIÓN DE PROBLEMAS ✦ LÓGICA MATEMÁTICA ✦ EMPRENDIMIENTO ✦ CÓDIGO LIMPIO ✦
+            ✦ PROACTIVIDAD ✦ ATENCIÓN AL CLIENTE ✦ RESOLUCIÓN DE PROBLEMAS ✦ LÓGICA MATEMÁTICA ✦ EMPRENDIMIENTO ✦ CÓDIGO LIMPIO ✦ CORTES LIMPIOS ✦ PROACTIVIDAD ✦ ATENCIÓN AL CLIENTE ✦ RESOLUCIÓN DE PROBLEMAS ✦ LÓGICA MATEMÁTICA ✦ EMPRENDIMIENTO ✦ CÓDIGO LIMPIO ✦ CORTES LIMPIOS
         </div>
     </div>
 
     <section class="seccion-principal" id="sobre-mi">
-        <div class="tarjeta-razor reveal">
+        <div class="tarjeta-razor reveal glass-effect">
             <div class="caja-cara-razor">
                 <div class="cara-overlay">
                     <img src="YO.png" alt="Joaquín Obregón" class="cara-img">
@@ -91,7 +129,7 @@
                 Cursando el 7mo año de la orientación en Programación en la Escuela Técnica N°5 de Berazategui, he descubierto que el software más eficiente no solo requiere buena lógica, sino entender a las personas que lo usan.
                 </p>
                 <p>
-                A través de mi experiencia en el trato directo con el público y, fundamentalmente, como barbero certificado, he forjado una ética de trabajo enfocada en el <strong>espíritu emprendedor, la escucha activa y la proactividad</strong>. Mi objetivo es combinar la precisión matemática del código con mis habilidades sociales para aportar soluciones de software que realmente impacten.
+                A través de mi experiencia en el trato directo con el público y, fundamentalmente, como barbero certificado con dos cursos finalizados, he forjado una ética de trabajo enfocada en el <strong>espíritu emprendedor, la escucha activa y la proactividad</strong>. Mi objetivo es combinar la precisión matemática del código con mis habilidades sociales para aportar soluciones de software que realmente impacten.
                 </p>
                 <div class="btn-cv-container">
                     <a href="mi_cv.pdf" class="btn-razor magnetic-item" download>
@@ -106,7 +144,7 @@
         <div class="container">
             <h2 class="section-heading text-center reveal">SOCIAL & ESTILO<span class="punto-rojo">.</span></h2>
             
-            <div class="ig-wrapper reveal">
+            <div class="ig-wrapper reveal glass-effect">
                 <div class="ig-header">
                     <div class="ig-avatar">
                         <img src="obrbarber.jpg" alt="Logo Barberia">
@@ -129,102 +167,32 @@
                 </div>
 
                 <div class="ig-grid">
-                    <a href="https://www.instagram.com/reel/DaOgFWfh-Lf/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="ig-post">
-                        <div class="ig-img-placeholder" style="background-image: url('1.png');"></div>
-                        <div class="ig-overlay"><span><i class="fa-solid fa-heart"></i> 45</span><span><i class="fa-solid fa-comment"></i> 3</span></div>
-                    </a>
-                    <a href="https://www.instagram.com/p/DYkalPSER8f/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="ig-post">
-                        <div class="ig-img-placeholder" style="background-image: url('2.png');"></div>
-                        <div class="ig-overlay"><span><i class="fa-solid fa-heart"></i> 62</span><span><i class="fa-solid fa-comment"></i> 5</span></div>
-                    </a>
-                    <a href="https://www.instagram.com/reel/DYkYBIfghy_/?utm_source=ig_web_copy_link" target="_blank" class="ig-post">
-                        <div class="ig-img-placeholder" style="background-image: url('3.png');"></div>
-                        <div class="ig-overlay"><span><i class="fa-solid fa-heart"></i> 58</span><span><i class="fa-solid fa-comment"></i> 2</span></div>
-                    </a>
-                    <a href="https://www.instagram.com/p/DWro6CvAcnF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="ig-post">
-                        <div class="ig-img-placeholder" style="background-image: url('5.png');"></div>
-                        <div class="ig-overlay"><span><i class="fa-solid fa-heart"></i> 89</span><span><i class="fa-solid fa-comment"></i> 12</span></div>
-                    </a>
-                    <a href="https://www.instagram.com/p/DYYeeiGjPvD/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="ig-post">
-                        <div class="ig-img-placeholder" style="background-image: url('4.png');"></div>
-                        <div class="ig-overlay"><span><i class="fa-solid fa-heart"></i> 41</span><span><i class="fa-solid fa-comment"></i> 1</span></div>
-                    </a>
-                    <a href="https://www.instagram.com/p/DSn_tIqgJdO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="ig-post">
-                        <div class="ig-img-placeholder" style="background-image: url('6.png');"></div>
-                        <div class="ig-overlay"><span><i class="fa-solid fa-heart"></i> 73</span><span><i class="fa-solid fa-comment"></i> 6</span></div>
-                    </a>
+                    <a href="#" target="_blank" class="ig-post"><div class="ig-img-placeholder" style="background-image: url('1.png');"></div><div class="ig-overlay"><span><i class="fa-solid fa-heart"></i> 45</span><span><i class="fa-solid fa-comment"></i> 3</span></div></a>
+                    <a href="#" target="_blank" class="ig-post"><div class="ig-img-placeholder" style="background-image: url('2.png');"></div><div class="ig-overlay"><span><i class="fa-solid fa-heart"></i> 62</span><span><i class="fa-solid fa-comment"></i> 5</span></div></a>
+                    <a href="#" target="_blank" class="ig-post"><div class="ig-img-placeholder" style="background-image: url('3.png');"></div><div class="ig-overlay"><span><i class="fa-solid fa-heart"></i> 58</span><span><i class="fa-solid fa-comment"></i> 2</span></div></a>
+                    <a href="#" target="_blank" class="ig-post"><div class="ig-img-placeholder" style="background-image: url('5.png');"></div><div class="ig-overlay"><span><i class="fa-solid fa-heart"></i> 89</span><span><i class="fa-solid fa-comment"></i> 12</span></div></a>
+                    <a href="#" target="_blank" class="ig-post"><div class="ig-img-placeholder" style="background-image: url('4.png');"></div><div class="ig-overlay"><span><i class="fa-solid fa-heart"></i> 41</span><span><i class="fa-solid fa-comment"></i> 1</span></div></a>
+                    <a href="#" target="_blank" class="ig-post"><div class="ig-img-placeholder" style="background-image: url('6.png');"></div><div class="ig-overlay"><span><i class="fa-solid fa-heart"></i> 73</span><span><i class="fa-solid fa-comment"></i> 6</span></div></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="seccion-principal" id="formacion">
-        <div class="container">
-            <h2 class="section-heading reveal">TRAYECTORIA<span class="punto-rojo">.</span></h2>
-            <div class="grid-3x2">
-                
-                <div class="carta-razor reveal">
-                    <div class="card-line card-line-blue"></div>
-                    <i class="devicon-bash-plain tech-icon color-blue"></i>
-                    <h3>Técnico en Programación</h3>
-                    <span class="fecha-etiqueta">7mo Año - Técnica N°5</span>
-                    <p>Desarrollo de pensamiento abstracto, creación de algoritmos complejos y estructuración lógica mediante código limpio.</p>
-                </div>
-                
-                <div class="carta-razor reveal delay-1">
-                    <div class="card-line card-line-white"></div>
-                    <i class="fa-solid fa-scissors tech-icon color-white"></i>
-                    <h3>Curso Barbería, Principiante</h3>
-                    <span class="fecha-etiqueta">2021, dic - 2022, feb</span>
-                    <p><strong>Ink barber, Varela.</strong><br>120+ horas de formación. Fundamentos del estilismo, manejo de herramientas y atención en salón.</p>
-                </div>
-
-                <div class="carta-razor reveal delay-2">
-                    <div class="card-line card-line-red"></div>
-                    <i class="fa-solid fa-fire-flame-curved tech-icon color-red"></i>
-                    <h3>Curso Barbería Profesional</h3>
-                    <span class="fecha-etiqueta">2023, feb - octubre</span>
-                    <p><strong>Instituto EVIC, Quilmes Centro.</strong><br>700+ horas de formación. Perfeccionamiento en fades, texturas y fidelización de clientes.</p>
-                </div>
-
-                <div class="carta-razor reveal">
-                    <div class="card-line card-line-blue"></div>
-                    <i class="fa-solid fa-shop tech-icon color-blue"></i>
-                    <h3>Atención al Cliente y Repositor</h3>
-                    <span class="fecha-etiqueta">2025, mar - ago</span>
-                    <p><strong>Carnicería Mirtha, Marítimo.</strong><br>+160hs. Gestión directa con el cliente, control de stock y optimización comercial.</p>
-                </div>
-
-                <div class="carta-razor reveal delay-1">
-                    <div class="card-line card-line-white"></div>
-                    <i class="fa-solid fa-snowflake tech-icon color-white"></i>
-                    <h3>Logística y Atención</h3>
-                    <span class="fecha-etiqueta">Sector Frigorífico</span>
-                    <p>Experiencia laboral en un frigorífico, con atención al cliente y trabajos continuos de reposición de productos en entornos de alta demanda.</p>
-                </div>
-
-                <div class="carta-razor reveal delay-2">
-                    <div class="card-line card-line-red"></div>
-                    <i class="fa-solid fa-server tech-icon color-red"></i>
-                    <h3>Gestión de Proyectos</h3>
-                    <span class="fecha-etiqueta">Lógica y Sistemas</span>
-                    <p>Aplicación de fundamentos ágiles y lógica matemática para la resolución de problemas estructurados y despliegue de soluciones IT.</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="seccion-oscura" id="proyectos">
+    <!-- CARRUSEL DE PROYECTOS (ESTILO COVERFLOW 3D INFINITO) -->
+    <section class="seccion-principal" id="proyectos">
         <div class="container">
             <h2 class="section-heading text-center reveal">PROYECTOS<span class="punto-rojo">.</span></h2>
             
-            <div class="carousel-wrapper reveal">
-                <button class="carousel-btn btn-prev magnetic-item"><i class="fa-solid fa-chevron-left"></i></button>
-
+            <div class="carousel-container reveal">
+                <button class="carousel-nav prev-carousel" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+                
                 <div class="carousel-track">
-                    <div class="proyecto-card">
-                        <div class="proyecto-borde-animado"></div>
+                    <!-- Proyecto 1 -->
+                    <div class="proyecto-card glass-effect magnetic-item-subtle" data-index="0">
+                        <div class="proyecto-img-wrapper">
+                            <img src="proyecto1.jpg" alt="Smart Parking" onerror="this.src='https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&q=80&w=600'">
+                            <div class="proyecto-overlay-color" style="background: rgba(217,37,37,0.3);"></div>
+                        </div>
                         <div class="proyecto-contenido">
                             <span class="tech-tag border-red">Python / Lógica</span>
                             <h3>Smart Parking</h3>
@@ -233,34 +201,114 @@
                         </div>
                     </div>
                     
-                    <div class="proyecto-card">
-                        <div class="proyecto-borde-animado blue-variant"></div>
+                    <!-- Proyecto 2 -->
+                    <div class="proyecto-card glass-effect magnetic-item-subtle" data-index="1">
+                        <div class="proyecto-img-wrapper">
+                            <img src="proyecto2.jpg" alt="Travel Agency" onerror="this.src='https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=600'">
+                            <div class="proyecto-overlay-color" style="background: rgba(29,53,87,0.3);"></div>
+                        </div>
                         <div class="proyecto-contenido">
-                            <span class="tech-tag border-blue">UI/UX / Desarrollo Web</span>
+                            <span class="tech-tag border-blue">UI/UX / Web</span>
                             <h3>Travel Agency</h3>
-                            <p>Plataforma comercial para la venta de paquetes turísticos, desde wireframes hasta carrito de compras.</p>
+                            <p>Plataforma comercial para la venta de paquetes turísticos, desde wireframes hasta carrito de compras estructurado.</p>
                             <a href="#" class="btn-razor btn-small mt-3">Ver Web <i class="fa-solid fa-globe"></i></a>
                         </div>
                     </div>
 
-                    <div class="proyecto-card">
-                        <div class="proyecto-borde-animado variant-white"></div>
+                    <!-- Proyecto 3 -->
+                    <div class="proyecto-card glass-effect magnetic-item-subtle" data-index="2">
+                        <div class="proyecto-img-wrapper">
+                            <img src="proyecto3.jpg" alt="Motor de Cálculo" onerror="this.src='https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=600'">
+                            <div class="proyecto-overlay-color" style="background: rgba(241,250,238,0.2);"></div>
+                        </div>
                         <div class="proyecto-contenido">
-                            <span class="tech-tag border-white">Python / Core Logic</span>
+                            <span class="tech-tag border-white">Python / Core</span>
                             <h3>Motor de Cálculo</h3>
                             <p>Aplicación para procesar variables complejas implementando bucles iterativos y estructuras condicionales avanzadas.</p>
                             <a href="#" class="btn-razor btn-small mt-3">Ver Código <i class="fa-solid fa-code"></i></a>
                         </div>
                     </div>
+
+                    <!-- Proyecto 4 -->
+                    <div class="proyecto-card glass-effect magnetic-item-subtle" data-index="3">
+                        <div class="proyecto-img-wrapper">
+                            <img src="proyecto4.jpg" alt="Barber Manager" onerror="this.src='https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&q=80&w=600'">
+                            <div class="proyecto-overlay-color" style="background: rgba(197, 160, 89, 0.3);"></div>
+                        </div>
+                        <div class="proyecto-contenido">
+                            <span class="tech-tag border-blue" style="border-color: var(--vintage-gold); color: var(--vintage-gold);">PHP / SQL</span>
+                            <h3>Barber Manager</h3>
+                            <p>Sistema de gestión de turnos para barberías locales, control de inventario de productos y base de clientes fidelizados.</p>
+                            <a href="#" class="btn-razor btn-small mt-3">Ver Web <i class="fa-solid fa-globe"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 5 -->
+                    <div class="proyecto-card glass-effect magnetic-item-subtle" data-index="4">
+                        <div class="proyecto-img-wrapper">
+                            <img src="proyecto5.jpg" alt="Portfolio v1" onerror="this.src='https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=600'">
+                            <div class="proyecto-overlay-color" style="background: rgba(217,37,37,0.2);"></div>
+                        </div>
+                        <div class="proyecto-contenido">
+                            <span class="tech-tag border-red">HTML / CSS / JS</span>
+                            <h3>Portfolio Dev</h3>
+                            <p>Desarrollo y maquetación web de alto impacto visual implementando animaciones CSS y manipulación del DOM nativa.</p>
+                            <a href="#" class="btn-razor btn-small mt-3">Ver Código <i class="fa-solid fa-code"></i></a>
+                        </div>
+                    </div>
                 </div>
 
-                <button class="carousel-btn btn-next magnetic-item"><i class="fa-solid fa-chevron-right"></i></button>
+                <button class="carousel-nav next-carousel" aria-label="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
-            
-            <div class="carousel-indicators reveal">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+        </div>
+    </section>
+
+    <section class="seccion-oscura" id="formacion">
+        <div class="container">
+            <h2 class="section-heading reveal">TRAYECTORIA<span class="punto-rojo">.</span></h2>
+            <div class="grid-3x2">
+                <div class="carta-razor glass-effect reveal">
+                    <div class="card-line card-line-blue"></div>
+                    <i class="devicon-bash-plain tech-icon color-blue"></i>
+                    <h3>Técnico en Programación</h3>
+                    <span class="fecha-etiqueta">7mo Año - Técnica N°5</span>
+                    <p>Desarrollo de pensamiento abstracto, creación de algoritmos complejos y estructuración lógica mediante código limpio.</p>
+                </div>
+                <div class="carta-razor glass-effect reveal delay-1">
+                    <div class="card-line card-line-white"></div>
+                    <i class="fa-solid fa-scissors tech-icon color-white"></i>
+                    <h3>Curso Barbería, Principiante</h3>
+                    <span class="fecha-etiqueta">2021, dic - 2022, feb</span>
+                    <p><strong>Ink barber, Varela.</strong><br>120+ horas de formación. Fundamentos del estilismo, manejo de herramientas y atención en salón.</p>
+                </div>
+                <div class="carta-razor glass-effect reveal delay-2">
+                    <div class="card-line card-line-red"></div>
+                    <i class="fa-solid fa-fire-flame-curved tech-icon color-red"></i>
+                    <h3>Curso Barbería Profesional</h3>
+                    <span class="fecha-etiqueta">2023, feb - octubre</span>
+                    <p><strong>Instituto EVIC, Quilmes Centro.</strong><br>700+ horas de formación. Perfeccionamiento en fades, texturas y fidelización de clientes.</p>
+                </div>
+                <div class="carta-razor glass-effect reveal">
+                    <div class="card-line card-line-blue"></div>
+                    <i class="fa-solid fa-shop tech-icon color-blue"></i>
+                    <h3>Atención al Cliente y Repositor</h3>
+                    <span class="fecha-etiqueta">2025, mar - ago</span>
+                    <p><strong>Carnicería Mirtha, Marítimo.</strong><br>+160hs. Gestión directa con el cliente, control de stock y optimización comercial.</p>
+                </div>
+                <div class="carta-razor glass-effect reveal delay-1">
+                    <div class="card-line card-line-white"></div>
+                    <i class="fa-solid fa-snowflake tech-icon color-white"></i>
+                    <h3>Logística y Atención</h3>
+                    <span class="fecha-etiqueta">Sector Frigorífico</span>
+                    <p>Experiencia laboral en un frigorífico, con atención al cliente y trabajos continuos de reposición de productos en alta demanda.</p>
+                </div>
+                <div class="carta-razor glass-effect reveal delay-2">
+                    <div class="card-line card-line-red"></div>
+                    <i class="fa-solid fa-server tech-icon color-red"></i>
+                    <h3>Gestión de Proyectos</h3>
+                    <span class="fecha-etiqueta">Lógica y Sistemas</span>
+                    <p>Aplicación de fundamentos ágiles y lógica matemática para la resolución de problemas estructurados y despliegue de soluciones IT.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -269,67 +317,63 @@
         <div class="container">
             <h2 class="section-heading text-center reveal">HERRAMIENTAS<span class="punto-rojo">.</span></h2>
             <div class="stack-grid">
-                <div class="stack-item item-blue magnetic-item reveal">
-                    <i class="devicon-javascript-plain colored"></i>
-                    <span>JAVASCRIPT</span>
-                    <span>medio</span>
-                </div>
-                <div class="stack-item item-red magnetic-item reveal delay-1">
-                    <i class="devicon-css3-plain colored"></i>
-                    <span>CSS3</span>
-                     <span>alto</span>
-                </div>
-                <div class="stack-item item-white magnetic-item reveal delay-2">
-                    <i class="devicon-python-plain colored"></i>
-                    <span>PYTHON</span>
-                     <span>medio-bajo</span>
-                </div>
-                <div class="stack-item item-red magnetic-item reveal delay-3">
-                    <i class="devicon-html5-plain colored"></i>
-                    <span>HTML5</span>
-                     <span>alto</span>
-                </div>
-                <div class="stack-item item-blue magnetic-item reveal delay-4">
-                    <i class="devicon-php-plain colored"></i>
-                    <span>PHP</span>
-                     <span>medio</span>
-                </div>
-                
-                <div class="stack-item item-white magnetic-item reveal">
-                    <i class="devicon-git-plain colored"></i>
-                    <span>GIT</span>
-                     <span>alto</span>
-                </div>
-                <div class="stack-item item-blue magnetic-item reveal delay-1">
-                    <i class="devicon-mysql-plain colored"></i>
-                    <span>SQL</span>
-                     <span>alto</span>
-                </div>
-                <div class="stack-item item-red magnetic-item reveal delay-2">
-                    <i class="devicon-figma-plain colored"></i>
-                    <span>UI DESIGN</span>
-                     <span>medio-alto</span>
-                </div>
-                <div class="stack-item item-white magnetic-item reveal delay-3">
-                    <div class="ai-icon"><i class="fa-solid fa-microchip"></i><span class="ai-text">IA</span></div>
-                    <span>PROMPTS</span>
-                     <span>alto</span>
-                </div>
+                <div class="stack-item glass-effect item-blue magnetic-item reveal"><i class="devicon-javascript-plain colored"></i><span>JAVASCRIPT</span><span>medio</span></div>
+                <div class="stack-item glass-effect item-red magnetic-item reveal delay-1"><i class="devicon-css3-plain colored"></i><span>CSS3</span><span>alto</span></div>
+                <div class="stack-item glass-effect item-white magnetic-item reveal delay-2"><i class="devicon-python-plain colored"></i><span>PYTHON</span><span>medio-bajo</span></div>
+                <div class="stack-item glass-effect item-red magnetic-item reveal delay-3"><i class="devicon-html5-plain colored"></i><span>HTML5</span><span>alto</span></div>
+                <div class="stack-item glass-effect item-blue magnetic-item reveal delay-4"><i class="devicon-php-plain colored"></i><span>PHP</span><span>medio</span></div>
+                <div class="stack-item glass-effect item-white magnetic-item reveal"><i class="devicon-git-plain colored"></i><span>GIT</span><span>alto</span></div>
+                <div class="stack-item glass-effect item-blue magnetic-item reveal delay-1"><i class="devicon-mysql-plain colored"></i><span>SQL</span><span>alto</span></div>
+                <div class="stack-item glass-effect item-red magnetic-item reveal delay-2"><i class="devicon-figma-plain colored"></i><span>UI DESIGN</span><span>medio-alto</span></div>
+                <div class="stack-item glass-effect item-white magnetic-item reveal delay-3"><div class="ai-icon"><i class="fa-solid fa-microchip"></i><span class="ai-text">IA</span></div><span>PROMPTS</span><span>alto</span></div>
             </div>
         </div>
     </section>
 
     <footer class="barber-footer">
-        <div class="footer-pole"></div>
-        <div class="container footer-content">
-            <h2 class="footer-title">INICIEMOS UN PROYECTO</h2>
-            <ul class="footer-links">
-                <li><a href="mailto:Obregon2008joaquin@gmail.com" class="magnetic-item"><i class="fa-solid fa-envelope"></i> Email</a></li>
-                <li><a href="https://github.com" target="_blank" class="magnetic-item"><i class="fa-brands fa-github"></i> GitHub</a></li>
-                <li><a href="https://linkedin.com" target="_blank" class="magnetic-item"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
-                <li><a href="https://instagram.com/obrbarber" target="_blank" class="magnetic-item"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-            </ul>
-            <p class="copyright">© 2026 JOAQUÍN OBREGÓN. BUENOS AIRES, BERAZATEGUI.</p>
+        <div class="footer-gradient-line"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col branding-col">
+                    <div class="logo-text">JOAQUIN_<span>OBREGON</span></div>
+                    <p class="footer-bio">Lógica matemática en el código. Precisión y estilo en el diseño y en la atención. Construyendo soluciones digitales modernas.</p>
+                </div>
+                
+                <div class="footer-col links-col">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#formacion">Trayectoria</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#destrezas">Skills</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col contact-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> Berazategui, Buenos Aires</li>
+                        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:Obregon2008joaquin@gmail.com">Obregon2008joaquin@gmail.com</a></li>
+                        <li><i class="fa-solid fa-school"></i> Técnica N°5</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col social-col">
+                    <h4>Redes Sociales</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com" target="_blank" class="magnetic-item" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank" class="magnetic-item" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="magnetic-item" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://instagram.com/obrbarber" target="_blank" class="magnetic-item custom-ig-logo" aria-label="Instagram Barbería">
+                            <img src="obrbarber.jpg" alt="Obr Barber">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2026 JOAQUÍN OBREGÓN. DISEÑADO CON CÓDIGO Y ESTILO.</p>
+            </div>
         </div>
     </footer>
 
